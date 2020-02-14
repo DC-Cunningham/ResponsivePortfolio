@@ -46,6 +46,9 @@ img {
   border: grey;
 }
 
-.about-me sm {
-  width: 100%;
-}
+@media screen and (max-width: 576px) {
+    .about-me {
+        display: block;
+        width: 80%;
+      }
+
