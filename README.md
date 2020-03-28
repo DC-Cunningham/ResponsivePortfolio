@@ -10,7 +10,7 @@ Website utilises bootstrap styling to allow for a responsive behaviour of elemen
 
 ## Notes on required work
 
-Currently the required javascript is inactive and non functioning and will need further setup.
+Currently the required javascript for the contact page is inactive and non functioning and will need further setup.
 
 ## Link to deployed Application
 
