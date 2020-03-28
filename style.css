@@ -1,20 +1,81 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#header {
+  z-index: 999;
+}
 .navbar-brand {
-  font-size: 30px;
+  font-size: 40px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 body {
-  background-color: grey;
+  background-image: url("Assets/Images/Clancys_1500x1124.jpg");
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
 h1 {
   margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-style: solid;
+  border-color: darkgrey;
+  border-radius: 10px;
+  border-width: 4px;
+}
+
+h3 {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-style: solid;
+  border-color: darkgrey;
+  border-radius: 10px;
+  border-width: 2px;
 }
 
 .container {
   width: 80%;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding: 10px 22px 10px 22px;
+  box-shadow: 4px 4px 15px 2px black;
+}
+
+body::after {
+  content: "";
   background-color: white;
-  padding: 20px;
+  opacity: 0.55;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 #main-contact-form {
@@ -29,14 +90,16 @@ img {
   border: grey;
 }
 
-.caption {
+.btn {
   width: 90%;
-  padding-top: ;
-  background-color: grey;
   height: 50px;
   text-align: center;
   position: absolute;
   margin-top: -30%;
+  line-height: 35px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: darkgrey;
 }
 
 .about-me {
@@ -46,8 +109,22 @@ img {
   border: grey;
 }
 
+.footer {
+  margin-top: 20 px;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 @media screen and (max-width: 576px) {
-    .about-me {
-        display: block;
-        width: 80%;
-      }
+  .about-me {
+    display: block;
+    width: 80%;
+  }
+}

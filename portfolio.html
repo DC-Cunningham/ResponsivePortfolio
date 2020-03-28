@@ -8,11 +8,12 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous"
   />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">DC Cunningham</a>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="header">
+    <a class="navbar-brand">DC Cunningham</a>
     <div class="nav ml-auto justify-content-end">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -29,41 +30,89 @@
       </ul>
     </div>
   </nav>
-  <div class="container">
-    <!--Header below navbar-->
-    <div class="row">
-      <h1>Portfolio</h1>
+  <div class="content">
+    <div class="container">
+      <!--Header below navbar-->
+      <div class="row">
+        <h1 class="col-12 text-center">Portfolio</h1>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <!--First image of portfolio-->
-    <div class="row">
-      <div class="col-sm-6 col-xl-4">
-        <img class="mx-auto" src="https://via.placeholder.com/300" />
-        <div class="caption">
-          <p>
-            This is the text that works as a caption to image 1
-          </p>
+    <div class="container">
+      <!--First image of portfolio-->
+      <div class="row">
+        <h3 class="col-12 text-center">Website Design:</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-xl-4">
+          <img
+            class="mx-auto"
+            src="Assets/Images/RevResLabs_SS_1000x1000.jpg"
+          />
+          <a
+          class="btn btn-secondary"
+          href="https://www.revolutionresearch.com.au/"
+          target="_blank"
+        >Revolution Research Laboratories</a>
+        </div>
+        <!--Second image of portfolio-->
+        <div class="col-sm-6 col-xl-4">
+          <img src="Assets/Images/ViCChamps_SS_1000x1000.jpg" />
+          <a
+          class="btn btn-secondary"
+          href="https://vicchampseries.com.au/"
+          target="_blank"
+        >Victorian MTB Championship Series</a>
+        </div>
+        <!--Third image of portfolio-->
+        <div class="col-sm-6 col-xl-4">
+          <img src="Assets/Images/TFRMTBC_SS_1000x1000.jpg" />
+          <a
+          class="btn btn-secondary"
+          href="https://mtbclub.fitzroyrevolution.com.au/"
+          target="_blank"
+        >The Fitzroy Revolution MTB Club</a>
         </div>
       </div>
-      <!--Second image of portfolio-->
-      <div class="col-sm-6 col-xl-4">
-        <img src="https://via.placeholder.com/300" />
-        <div class="caption">
-          <p>
-            This is the text that works as a caption to image 2
-          </p>
+      <div class="row">
+        <h3 class="col-12 text-center">GitHub Projects:</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-xl-4">
+          <img class="mx-auto" src="Assets/Images/FoodHound_SS_1000x1000.jpg" />
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/jschrbr/food-hound"
+            target="_blank"
+          >Food Hound</a>
+        </div>
+        <!--Second image of portfolio-->
+        <div class="col-sm-6 col-xl-4">
+          <img src="Assets/Images/CodingQuiz_SS_1000x1000.jpg" />
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/DCRevResLabs/CodingQuiz"
+            target="_blank"
+          >Coding Quiz</a>
+          </div>
+        </div>
+        <!--Third image of portfolio-->
+        <div class="col-sm-6 col-xl-4">
+          <img src="Assets/Images/WeatherDashboard_SS_1000x1000.jpg" />
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/DCRevResLabs/WeatherDashboard"
+            target="_blank"
+          >Weather Dashboard</a>
+          </div>
         </div>
       </div>
-      <!--Third image of portfolio-->
-      <div class="col-sm-6 col-xl-4">
-        <img src="https://via.placeholder.com/300" />
-        <div class="caption">
-          <p>
-            This is the text that works as a caption to image 2
-          </p>
-        </div>
-      </div>
+    </div>
+    <div class="footer">
+      © 2020 Copyright:
+      <a href="https://www.revolutionresearch.com.au/">
+        Revolution Research Laboratories Pty. Ltd.</a
+      >
+      <script src="Assets/JS/script.js"></script>
     </div>
   </div>
 </body>
